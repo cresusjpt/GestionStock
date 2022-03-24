@@ -1,0 +1,57 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionStock"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:CodeAnalysis="clr-namespace:Microsoft.CodeAnalysis" x:Class="GestionStock.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="832" Width="1045">
+    <Grid>
+        <TabControl>
+            <TabItem x:Name="onglet" Header="Fournisseur">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="nomF" HorizontalAlignment="Left" Margin="144,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Text="Sud Ouest Caoutchouk"/>
+                    <TextBox x:Name="contactF" HorizontalAlignment="Left" Margin="144,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="217" Text="Olivier"/>
+                    <TextBox x:Name="titreF" HorizontalAlignment="Left" Margin="144,125,0,0" TextWrapping="Wrap" Text="Responsable" VerticalAlignment="Top" Width="217"/>
+                    <TextBox x:Name="adressF" HorizontalAlignment="Left" Margin="144,173,0,0" TextWrapping="Wrap" Text="1 Rue galette du roi" VerticalAlignment="Top" Width="217"/>
+                    <TextBox x:Name="villeF" HorizontalAlignment="Left" Margin="144,231,0,0" TextWrapping="Wrap" Text="Merignac" VerticalAlignment="Top" Width="217"/>
+                    <TextBox x:Name="codePF" HorizontalAlignment="Left" Margin="144,291,0,0" TextWrapping="Wrap" Text="33000" VerticalAlignment="Top" Width="217"/>
+                    <TextBox x:Name="depF" HorizontalAlignment="Left" Margin="144,342,0,0" TextWrapping="Wrap" Text="33" VerticalAlignment="Top" Width="217"/>
+                    <TextBox x:Name="countryF" HorizontalAlignment="Left" Margin="144,389,0,0" TextWrapping="Wrap" Text="France" VerticalAlignment="Top" Width="217"/>
+                    <Label Content="Nom fournisseur" HorizontalAlignment="Left" Margin="29,20,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Contact" HorizontalAlignment="Left" Margin="29,73,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Titre" HorizontalAlignment="Left" Margin="29,117,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Adresse" HorizontalAlignment="Left" Margin="29,165,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Ville" HorizontalAlignment="Left" Margin="29,231,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Code Postal" HorizontalAlignment="Left" Margin="29,282,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Département" HorizontalAlignment="Left" Margin="29,338,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Pays" HorizontalAlignment="Left" Margin="29,389,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="telF" HorizontalAlignment="Left" Margin="143,441,0,0" TextWrapping="Wrap" Text="0612345678" VerticalAlignment="Top" Width="217"/>
+                    <Label x:Name="tellable" Content="Tel" HorizontalAlignment="Left" Margin="28,441,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="condPF" HorizontalAlignment="Left" Margin="143,492,0,0" TextWrapping="Wrap" Text="30% à la commande" VerticalAlignment="Top" Width="217"/>
+                    <Label Content="Conditions" HorizontalAlignment="Left" Margin="28,492,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="condPF_Copy" HorizontalAlignment="Left" Margin="144,542,0,0" TextWrapping="Wrap" Text="tossoujeanpaul641@gmail.com" VerticalAlignment="Top" Width="217"/>
+                    <Label Content="Email" HorizontalAlignment="Left" Margin="29,542,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Remarques" HorizontalAlignment="Left" Margin="31,598,0,0" VerticalAlignment="Top"/>
+                    <materialDesign:Snackbar HorizontalAlignment="Left" Margin="340,710,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="addBtn" Content="Ajouter" HorizontalAlignment="Left" Margin="40,682,0,0" VerticalAlignment="Top" Height="46" Width="109" Click="addBtn_Click"/>
+                    <Button x:Name="editBtn" Content="Modifier" HorizontalAlignment="Left" Margin="190,682,0,0" VerticalAlignment="Top" Height="46" Width="109"/>
+                    <Button x:Name="deleteBtn" Content="Supprimer" HorizontalAlignment="Left" Margin="328,682,0,0" VerticalAlignment="Top" Height="46" Width="109"/>
+                    <Button x:Name="cancelBtn" Content="Annuler" HorizontalAlignment="Center" Margin="0,682,0,0" VerticalAlignment="Top" Height="46" Width="109" Click="cancelBtn_Click"/>
+                    <TextBox HorizontalAlignment="Left" Margin="144,602,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="217"/>
+                    <DataGrid x:Name="gridFournisseur" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="382,20,27,260">
+                        <DataGrid.DataContext>
+                            <CodeAnalysis:EmbeddedAttribute/>
+                        </DataGrid.DataContext>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Année Exercice">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Articles"/>
+        </TabControl>
+
+    </Grid>
+</Window>
