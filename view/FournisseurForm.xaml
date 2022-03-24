@@ -1,0 +1,10 @@
+﻿<Window x:Class="GestionStock.view.FournisseurForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionStock.view"
+        mc:Ignorable="d"
+        Title="FournisseurForm" Height="760" Width="1121" Activated="Window_Activated">
+    <Button x:Name="ajouterBtn" Content="Ajouter" Margin="0,379,673,0" VerticalAlignment="Top" Height="63" Click="Ajouter_Click" ContextMenuClosing="ajouterBtn_ContextMenuClosing" HorizontalAlignment="Right" Width="151"/>
+</Window>
