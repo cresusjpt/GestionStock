@@ -12,11 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-<<<<<<< HEAD
 using GestionStock.model;
 using GestionStock.controller;
-=======
->>>>>>> 9e1dfd95c19a77a2f2a3df4a328cb94a1b3b6e60
 
 namespace GestionStock
 {
@@ -28,7 +25,6 @@ namespace GestionStock
         public MainWindow()
         {
             InitializeComponent();
-<<<<<<< HEAD
             FounisseurControl controller = new FounisseurControl();
             List<Fournisseur>  fournisseurs = controller.show();
             foreach (Fournisseur fournisseur in fournisseurs)
@@ -58,8 +54,6 @@ namespace GestionStock
             fournisseur.nomF = nomF.Text;
             fournisseur.nomF = nomF.Text;
             fournisseur.nomF = nomF.Text;
-=======
->>>>>>> 9e1dfd95c19a77a2f2a3df4a328cb94a1b3b6e60
         }
     }
 }
