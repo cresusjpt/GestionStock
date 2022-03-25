@@ -11,7 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+<<<<<<< HEAD
 using GestionStock.model;
+=======
+>>>>>>> 9e1dfd95c19a77a2f2a3df4a328cb94a1b3b6e60
 
 
 namespace GestionStock.view
@@ -28,7 +31,11 @@ namespace GestionStock.view
 
         private void Ajouter_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             Fournisseur fournisseur = new Fournisseur();
+=======
+            
+>>>>>>> 9e1dfd95c19a77a2f2a3df4a328cb94a1b3b6e60
         }
 
         private void ajouterBtn_ContextMenuClosing(object sender, ContextMenuEventArgs e)
