@@ -8,8 +8,9 @@ namespace GestionStock.model
 {
     internal class Article
     {
+        //select * from articles sqldatareader
         public int ArticlePK { get; }
-        public string ArticleNom { get; set; }
+        public string ArticleNom; //{ get; set; }
 
         public Fournisseur fournisseur
             { get; set; }

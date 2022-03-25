@@ -33,7 +33,7 @@ namespace GestionStock.model.repoinstance
 
         public static int exec(string query)
         {
-            SqlCommand cmd = new SqlCommand(query,GetInstance());
+            SqlCommand cmd = new SqlCommand(query, GetInstance());
             _instance.Open();
             int ret = cmd.ExecuteNonQuery();
             _instance.Close();
@@ -46,14 +46,14 @@ namespace GestionStock.model.repoinstance
             SqlCommand cmd = new SqlCommand(query, GetInstance());
             _instance.Open();
             SqlDataReader ret = cmd.ExecuteReader();
-            _instance.Close();
-
             return ret;
-
         }
 
-
-
+        public static void close()
+        {
+            if (_instance != null)
+                _instance.Close();
+        }
 
     }
 }
